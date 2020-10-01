@@ -20,10 +20,6 @@ E number of edges.Find and print the Minimum Spanning Tree (MST) using Kruskal's
 #define pb push_back
 #define mp make_pair
 using namespace std;
-ll X[] = {-1, 1, 0, 0};                // 4
-ll Y[] = {0, 0, -1, 1};                // 4
-ll XX[] = {-1, 1, 0, 0, -1, 1, -1, 1}; // 8
-ll YY[] = {0, 0, -1, 1, -1, 1, 1, -1}; // 8
 #define IOS                  \
     ios::sync_with_stdio(0); \
     cin.tie(0);              \
