@@ -4,6 +4,17 @@ Structure the Data in a correct and efficient way!
 This repository will contain all the generic data-structure and algorithms that run in an effiecient time and space complexity. 
 You may get your changes merged here by submitting a Pull Request :fire:
 
+## Implemented Algorithms (Unordered)
+| Algorithm                          | Language | Time Complexity                    | Space Complexity |
+|------------------------------------|----------|------------------------------------|------------------|
+| balanced_brackets                  | C++      | O(N)                               |                  |
+| BUBBLE SORT                        | C++      | O(n^2)                             |                  |
+| Kadane's Algorithm                 | C++      | O(n)                               |                  |
+| Knuth–Morris–Pratt Algorithm (KMP) | C++      | Θ(m(preprocessing) + n (matching)) | O(m)             |
+| Square Root Decomposition          | C++      | Update: O(1), Query: O(sqrt(n))    |                  |
+
+Note: Some algorithms are not added since time and space complexities are not mentioned.
+
 Q. **How will I get my changes merged(how should I open a pull request)**
 
 A. You may propose your changes via a Pull Request. For how to open a pull request, give [this](https://opensource.com/article/19/7/create-pull-request-github) a read, if stuck, please ping anyone of the maintainers for help.
