@@ -1,5 +1,7 @@
 /* Algorithm : Linear Search - C Programming"
-Time complexity = O(n) */
+Time complexity = O(n)
+Space Complexity = O(1)
+ */
 
 #include <stdio.h>
 int main()
