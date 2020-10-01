@@ -1,16 +1,40 @@
-name: C/C++ CI
-
-on: [push]
+name: CI
+# Workflow file for windows
+on:
+  push:
+    branches:
+      - master
+  pull_request: {}
 
 jobs:
-  ubuntu-build:
-    runs-on: ubuntu-latest
+  Windows:
+    name: build-windows
+    runs-on: [self-hosted, windows]
+
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.0.0
-    - name: Build project
-      uses: nicledomaS/cmake_build_action@v1
+      uses: actions/checkout@v1
       with:
-        submodule_update: ON
-        run_tests: ON
-        unit_test_build: -Dtest=ON
+          submodules: recursive
+
+    - name: Installing vcpkg (windows)
+      run: |
+        cd ..
+        git clone https://github.com/Microsoft/vcpkg.git
+        cd vcpkg
+        git checkout --force 2020.01
+        .\bootstrap-vcpkg.bat
+        .\vcpkg.exe install cppzmq:x64-windows
+
+    - name: Running cmake (windows)
+      run: |
+        cd ${{ github.workspace }}
+        mkdir build
+        cd build
+        cmake .. -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}
+                  /../vcpkg/scripts/buildsystems/vcpkg.cmake
+
+    - name: Build Solution (windows)
+      run: |
+        cd build
+        MSBuild.exe CMakeHelloWorld.sln
