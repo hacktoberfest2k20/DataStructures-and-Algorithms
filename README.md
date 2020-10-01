@@ -16,5 +16,7 @@ A. Well, it is simple enough,follow the procedure
    * Now create and issue in this repository via clicking [here](https://github.com/hacktoberfest2k20/DataStructures-and-Algorithms/issues/new), 
    * Get yourself assigned to it(via commenting on the issue and tagging any of the maintainer)
    * Implement it, and create a pull request, we'll merge your PR very soon with minimal changes needed.
+ 
+**Fun Fact:** This repository is independent of languages, which means, you may add the algorithm(s) in the programming language you find yourself comfortable with!
    
  Very soon you'll be getting 'em merged in our Prime branch  
