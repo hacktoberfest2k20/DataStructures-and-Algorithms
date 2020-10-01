@@ -1,6 +1,11 @@
-//Time Complexity for tree construction is O(n). 
-//Time complexity to query in given range is O(Logn).  
-//Time complexity for update a value at a given index is O(Logn).
+/*==========================================================================*/
+/*
+  
+Time Complexity for tree construction is O(n). 
+Time complexity to query in given range is O(Logn).  
+Time complexity for update a value at a given index is O(Logn).
+*/
+/*--------------------------------------------------------------------------*/
 
 #include <bits/stdc++.h>
 using namespace std;
