@@ -1,3 +1,8 @@
+//bucket sort
+//time complexity:average case-O(n + k)
+//               :worst case-O(n²)
+//space complexity: O(n + k)
+
 #include<bits/stdc++.h>
 using namespace std;
 
