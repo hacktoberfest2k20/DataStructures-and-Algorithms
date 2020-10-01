@@ -1,3 +1,9 @@
+//Bucket Sort Algorithm 
+//Complexity:
+//Average time complexity: O(n + k). 
+//The worst time complexity is O(n²). 
+//The space complexity for Bucket Sort is O(n+k).
+
 #include <bits/stdc++.h> 
 using namespace std; 
   
