@@ -4,8 +4,11 @@ the problem is to find the shortest possible route that visits every city exactl
 returns to the starting point.
 */
 
+
 //Solution using DP based approach and bitmasking
 
+//Time Complexity O(n^2*2^n)
+//Space complexity O(n*2^n)
 #include <iostream>
 #include <algorithm>
 #define infinity 999999
