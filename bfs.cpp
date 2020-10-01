@@ -7,7 +7,7 @@
 #define loop(i, a, b) for (int i = a; i < b; i++)
 #define ull unsigned long long int
 #define ll long long int
-                                       using namespace std;
+using namespace std;
 
 void bfs(unordered_map<int, unordered_map<int, int>> graph, int starting_node)
 {
