@@ -4,7 +4,7 @@ using namespace std;
 int lcs(string s1,string s2){
 
 	int m = s1.size();
-	int n = s1.size();
+	int n = s2.size();
 
 	int L[m+1][n+1];
 
@@ -14,7 +14,6 @@ int lcs(string s1,string s2){
 			else if (s1[i-1]==s2[j-1]) L[i][j] = L[i-1][j-1]+1;
 			else L[i][j] = max(L[i-1][j],L[i][j-1]);
 		}
-
 	}
 
 	return L[m][n];
