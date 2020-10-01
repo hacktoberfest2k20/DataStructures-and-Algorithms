@@ -17,6 +17,12 @@ A. Well, it is simple enough,follow the procedure
    * Get yourself assigned to it(via commenting on the issue and tagging any of the maintainer)
    * Implement it, and create a pull request, we'll merge your PR very soon with minimal changes needed.
  
+ ## For Contributions
+ * In the Pull Requests proposed, please add the **Name Of Algorithm** you added in the PR and its **Space & Time Complexity** both right at the top of the File you  create/optimize.
+ * Don't Create duplicate issues or Pull Requests (ones which already exist on the repository)
+
+* Star :star: the repo for exciting contests and updates!!!
+
 **Fun Fact:** This repository is independent of languages, which means, you may add the algorithm(s) in the programming language you find yourself comfortable with!
    
  Very soon you'll be getting 'em merged in our Prime branch  
