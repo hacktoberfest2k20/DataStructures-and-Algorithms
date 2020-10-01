@@ -1,5 +1,6 @@
 /*==========================================================================*/
-/*  
+/*
+  
 Time Complexity for tree construction is O(n). 
 Time complexity to query in given range is O(Logn).  
 Time complexity for update a value at a given index is O(Logn).
@@ -156,7 +157,8 @@ int main()
   
     int qs = 1; // Starting index of query range  
     int qe = 5; // Ending index of query range  
-   // calling the function of to find minimum and maximum value in the given range    
+  
+     
    pi temp=rangeminmax(st,n,qs,qe);
    cout<<"minimum and maximum in the given range"<<" "<<temp.first<<" "<<temp.second<<endl; 
    int new_val=15;
