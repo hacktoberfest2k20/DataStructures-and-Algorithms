@@ -1,9 +1,12 @@
+// Time Complexity O(|V|) = O(b^d)  where |V| is the number of nodes. You need to traverse all nodes.
+// Space complexity is O(| V |) as well - since at worst case you need to hold all vertices in the queue.
+
 #include <bits/stdc++.h>
 #define MOD 1000000007
 #define loop(i, a, b) for (int i = a; i < b; i++)
 #define ull unsigned long long int
 #define ll long long int
-using namespace std;
+                                       using namespace std;
 
 void bfs(unordered_map<int, unordered_map<int, int>> graph, int starting_node)
 {
