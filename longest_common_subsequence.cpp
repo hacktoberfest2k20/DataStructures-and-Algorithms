@@ -1,3 +1,18 @@
+
+
+/*
+ 
+Time Complexity - O(n*m)
+product of length of two strings
+
+Space Complexity -O(n*m)
+product of length of two strings
+
+Algorithm - Dynamic Programming (by using dynamic programing keep storing the length of longest common subsequence(lcs) for every continuous part of string1 for the whole string2.)
+
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -29,8 +44,8 @@ using namespace std;
 
 int main()
 {
-    string  s1,s2;
-    cin>>s1>>s2;
-    cout<<longestCommonSubsequence(s1,s2);
+    string  string1,string2;
+    cin>>string1>>string2;
+    cout<<longestCommonSubsequence(string1,string2);
     return 0;
 }
