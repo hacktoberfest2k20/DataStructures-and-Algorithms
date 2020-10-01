@@ -1,5 +1,6 @@
 /*insertion sort is a simple sorting algorithm in which the array us split into a sorted adn unsorted part.
 Values from the unsorted part are picked and placed at correct position in sorted part*/
+//Time Complexity: O(n*2)
 
 #include <bits/stdc++.h>
 using namespace std;
