@@ -18,7 +18,7 @@ void naive(int a[], int n, int x)
 			{
 				if (i != j && j != k && k != i)
 				{
-					if (a[i] + a[j] + a[k] == x)
+					if (a[i] + a[j] + a[k] == x)// found the answer
 					{
 						cout << "YES\n";
 						return;
@@ -34,25 +34,25 @@ void efficient(int a[], int n, int x)
 {
 	//alternatively , we can sort the array, fix j and try to find i and k;
 	// this will be O(NlogN)+O(N^2)= O(N^2)
-	sort(a, a + n);
+	sort(a, a + n); // sorting the array .
 	for (int j = 1; j < n - 1; j++)
 	{
 		/*
 		for each index j, we are trying to find i to its left and k to its right .
 		*/
-		int i = 0, k = n - 1;
+		int i = 0, k = n - 1; // we will use 2 pointers i and k.
 		while (i < j && j < k)
 		{
-			if (a[i] + a[k] == x - a[j])
+			if (a[i] + a[k] == x - a[j]) // we have found a suitable triplet.
 			{
 				cout << "YES\n";
 				return;
 			}
-			else if (a[i] + a[k] > x - a[j])
+			else if (a[i] + a[k] > x - a[j]) //=> a[i]+a[j]+a[k] > x ,now since a is already sorted, to decrease the value of sum, we decrease value of a[k] => we decrease k.
 			{
 				k--;
 			}
-			else
+			else //=> a[i]+a[j]+a[k] < x ,now since a is already sorted, to increase the value of sum, we increase value of a[i] => we increase i.
 			{
 				i++;
 			}
