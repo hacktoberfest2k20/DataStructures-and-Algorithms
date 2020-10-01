@@ -23,6 +23,8 @@ A. Well, it is simple enough,follow the procedure
 
 * Star :star: the repo for exciting contests and updates!!!
 
+More excited? Join our [discord server](https://discord.gg/4XRsmx) and ask questions in the #hacktoberfest.
+
 **Fun Fact:** This repository is independent of languages, which means, you may add the algorithm(s) in the programming language you find yourself comfortable with!
    
  Very soon you'll be getting 'em merged in our Prime branch  
