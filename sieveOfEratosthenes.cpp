@@ -1,3 +1,5 @@
+// Sieve of Eratosthenes ,timeComplexity = O(nlogn)
+// For a given number it will tell all the prime number less than or equal to it.
 
 #include <bits/stdc++.h> 
 using namespace std; 
