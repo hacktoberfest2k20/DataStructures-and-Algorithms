@@ -31,6 +31,7 @@ int main()
 		else if (a[mid] > x)
 		{
 			h = mid - 1;
+			l = l + 1 ; //if the no is not present between l to h then we should increase l index because the element we are searching for is not present at l
 		}
 		else if (a[mid] < x)
 		{
