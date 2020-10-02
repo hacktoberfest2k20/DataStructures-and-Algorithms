@@ -1,7 +1,5 @@
-#include<iostream>
-#include<stdlib.h>
-#include<process.h>
-#include<time.h>
+#include<bits/stdc++.h>
+
 using namespace std;
 void heapify(int arr[], int n, int i) 
 { 
