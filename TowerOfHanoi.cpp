@@ -1,3 +1,5 @@
+//Time Complexity O(2^n)
+
 /*
 Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. 
 The objective of the puzzle is to move the entire stack to another rod, obeying the following 
@@ -9,7 +11,7 @@ another stack i.e. a disk can only be moved if it is the uppermost disk on a sta
 
 */
 
-//Time Complexity O(2^n)
+
 
 #include <iostream>
 using namespace std;
