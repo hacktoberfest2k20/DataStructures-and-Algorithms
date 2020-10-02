@@ -7,7 +7,7 @@ long long int gcd(long long int a, long long int b)
 	else
 	{
 		a = a % b;
-		return gcd(b, a); /*Famous euclid theorem,property of gcd is used here*/
+		return gcd(b, a); /*Famous euclid theorem, property of gcd is used here.*/
 	}
 }
 
