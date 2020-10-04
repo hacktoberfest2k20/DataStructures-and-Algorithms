@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+// Depth First Search
+// Time Complexity = (V+E) where V = number of vertices and E = number of edges
 
 vector<bool> visited; 
 void depth_first_search(int v,vector<vector<int>>&graph)
