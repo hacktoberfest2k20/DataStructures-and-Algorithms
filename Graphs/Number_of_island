@@ -1,0 +1,29 @@
+class Solution {
+public:
+    void fn(vector<vector<char>>& grid,int n,int m,int a,int b){
+        if(a<0 || b<0 ||a>=n || b>=m ||grid[a][b]=='0')
+            return;
+        grid[a][b]='0';
+        fn(grid,n,m,a+1,b);
+                fn(grid,n,m,a-1,b);
+        fn(grid,n,m,a,b-1);
+        fn(grid,n,m,a,b+1);
+
+    }
+    int numIslands(vector<vector<char>>& grid) {
+        int n=grid.size();
+        if(n==0)
+            return 0;int a=0;
+        int m=grid[0].size();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(grid[i][j]=='1'){
+                    a++;
+                    fn(grid,n,m,i,j);
+                }
+            }
+        }
+        return a;
+        
+    }
+};
