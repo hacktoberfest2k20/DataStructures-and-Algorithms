@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 //Breadth First Implementation
-
+// Time Complexity = (V+E) where V = number of vertices and E = number of edges
 vector<bool> visited; 
 
 
