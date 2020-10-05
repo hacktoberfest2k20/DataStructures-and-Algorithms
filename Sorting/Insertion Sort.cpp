@@ -1,3 +1,5 @@
+/* Insertion Sort is a sorting algorithm.
+Time Complexity of Insertion Sort in worst and average cases is O(n^2) and in best case is O(n). */
 #include <bits/stdc++.h> 
 using namespace std; 
 void iSort(int b[], int n)  
