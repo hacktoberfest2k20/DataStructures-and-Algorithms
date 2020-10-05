@@ -1,4 +1,5 @@
 // Radix sort in C++
+// Time Complexity : O(n*k). n = number of elements, k = max number of digits of the numbers
 
 #include <iostream>
 #include <algorithm>
