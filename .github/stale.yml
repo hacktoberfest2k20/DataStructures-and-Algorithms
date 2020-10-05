@@ -1,0 +1,15 @@
+daysUntilClose: false
+staleLabel: community
+
+issues:
+  daysUntilStale: 0.21
+  markComment: >
+     It will be now be reviewed manually. Thanks for contributions.
+     If you have more concerns, you may get the conversation started at our 
+     [discord server](https://discord.gg/3ZgXaqC)
+pulls:
+   daysUntilStale: 0.21
+   markComment: >
+     It will be now be reviewed manually. Thanks for contributions.
+     If you have more concerns, you may get the conversation started at our 
+     [discord server](https://discord.gg/3ZgXaqC)
