@@ -8,9 +8,11 @@ int helper(int h,int *ans){
     if(ans[h]!=-1){
         return ans[h];
     }
-
+//Making recursive calls
 	int mod = (int) (pow(10, 9)) + 7;
+	//count no. of bts of height h-1
 	int x = helper(h - 1,ans);
+	//count no. of bts of height h-2
 	int y = helper(h - 2,ans);
 
 	int temp1 = (int)(((long)(x)*x) % mod);
@@ -35,7 +37,7 @@ int binaryTreesOfHeightH(int h) {
 int main() {
     int h;
     cin >> h;
-    int ans = binaryTreesOfHeightH(h);
+    int ans = binaryTreesOfHeightH(h); // function call
     ans = ans % ((int)(pow(10, 9)) + 7);
     cout << ans << endl;
 }
