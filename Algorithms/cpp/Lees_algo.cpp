@@ -33,7 +33,7 @@ bool isValid(int mat[][N], bool visited[][N], int row, int col)
 void BFS(int mat[][N], int i, int j, int x, int y)// BFS algorithm
 {
 	
-	bool visited[M][N]
+	bool visited[M][N];
 	memset(visited, false, sizeof visited);
 	queue<Node> q;
 
