@@ -1,0 +1,39 @@
+name: Linter/Compiler
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  cpp-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check C++ syntax
+        run: |
+          sudo apt-get install -y cppcheck
+          cppcheck --error-exitcode=1 .
+
+  python-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check Python syntax
+        run: |
+          sudo apt-get install -y python python3-pip python3-setuptools
+          pip3 install wheel
+          sudo pip3 install pylint 
+          find . -iname "*.py" -exec pylint {} \;
+
+  java-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check Java syntax
+        run: |
+          sudo apt-get install -y openjdk-11-jdk
+          find . -iname "*.java" -exec javac {} \; | egrep '.*'
