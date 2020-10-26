@@ -1,3 +1,7 @@
+/*
+Implements Unioun Find operations
+Complexity: O(logN) amortized is O(1)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
