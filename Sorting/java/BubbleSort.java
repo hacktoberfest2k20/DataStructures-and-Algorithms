@@ -4,7 +4,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class BubbleSort {
 
   // create an object of scanner
   // to take input from the user
