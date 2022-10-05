@@ -5,7 +5,7 @@
 
 // Time complexity: O(2^N)
 //Auxiliary Space: O(N)
-
+//code
 #include <bits/stdc++.h>
 using namespace std;
  
