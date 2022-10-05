@@ -29,11 +29,11 @@ jobs:
           sudo pip3 install pylint 
           find . -iname "*.py" -exec pylint {} \;
 
-  java-lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Check Java syntax
-        run: |
-          sudo apt-get install -y openjdk-11-jdk
-          find . -iname "*.java" -exec javac {} \; | egrep '.*'
+#   java-lint:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Check Java syntax
+#         run: |
+#           sudo apt-get install -y openjdk-11-jdk
+#           find . -iname "*.java" -exec javac {} \; | egrep '.*'
