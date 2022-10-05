@@ -57,8 +57,8 @@ public class BubbleSort {
     // create an array
     int[] data = { -2, 45, 0, 11, -9 };
 
-    // create an object of Main class
-    Main bs = new Main();
+    // create an object of BubbleSort class
+    BubbleSort bs = new BubbleSort();
 
     // call the method bubbleSort using object bs
     // pass the array as the method argument
