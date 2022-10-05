@@ -3,6 +3,9 @@
 //one rod to another
 // our refrenced auxilary rod changes everytime and we call the function recursively
 
+// Time complexity: O(2^N)
+//Auxiliary Space: O(N)
+
 #include <bits/stdc++.h>
 using namespace std;
  
